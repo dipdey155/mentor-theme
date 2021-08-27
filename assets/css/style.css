@@ -1,0 +1,1361 @@
+/* ********************
+
+Author: Dip Chandra Dey,
+Date: 00/00/0000,
+Description:
+
+******************** *
+
+/*************** Import Files *******************/
+@import url("../fonts/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+html {
+  font-family: sans-serif, Arial, Helvetica;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #444444;
+  background: #fff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.pd {
+  padding: 80px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+:root {
+  --base-color: #5FCF80;
+  --secondBase-color: #37423B;
+  --box-Color: #444444;
+  --hover-color: #3ac162;
+}
+
+/* ************ Header Start ************* */
+#header {
+  background: #fff;
+}
+
+#header nav a.logo {
+  color: var(--base-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#header nav ul li {
+  padding: 10px 0px 10px 16px;
+}
+
+#header nav ul li a.start-now {
+  background: var(--base-color);
+  color: #fff;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+#header nav ul li a.start-now:hover {
+  background: var(--hover-color);
+  color: #fff;
+}
+
+#header nav ul li a {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--secondBase-color);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#header nav ul li a:hover {
+  color: var(--base-color);
+}
+
+#header nav ul li a.activated {
+  color: var(--base-color);
+}
+
+#header nav ul li a:active {
+  color: var(--base-color);
+}
+
+/* ************ Header End ************* */
+/*****************Hero Start**************/
+#Hero {
+  background: url(../img/hero-bg.jpg) top center;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#Hero .hero-article {
+  position: relative;
+}
+
+#Hero .hero-article h1 {
+  margin-top: 180px;
+  font-size: 48px;
+  font-weight: 900;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#Hero .hero-article h4 {
+  color: #eee;
+  margin: 15px 0px;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+
+#Hero .hero-btn .get-started {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#Hero .hero-btn .get-started:hover {
+  background: var(--base-color);
+  border: 2px solid #5fcf80;
+}
+
+#Hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*****************Hero End**************/
+/*****************About Start**************/
+#about h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#about h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#about p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#about .content h3 {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: sans-serif;
+  color: var(--box-Color);
+}
+
+#about .content .font-italic,
+#about .content p {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--box-Color);
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+  color: var(--box-Color);
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+#about .content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--base-color);
+}
+
+#about .content p {
+  color: var(--box-Color);
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+#about .content a.learn-more-btn {
+  background: var(--base-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 9px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 15px;
+  display: inline-block;
+}
+
+#about .content a.learn-more-btn:hover {
+  background: var(--hover-color);
+  color: #fff;
+}
+
+/********* About End ***********/
+/********* Counts Start ***********/
+#counts {
+  padding: 30px 0px;
+  background: #F6F7F6;
+}
+
+#counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: var(--base-color);
+  font-weight: 700;
+}
+
+#counts .counters p {
+  padding: 0;
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--secondBase-color);
+}
+
+/********* Counts End ***********/
+/********* Why Us Section Start ***********/
+#why-us .content {
+  padding: 30px;
+  background: var(--base-color);
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#why-us .content h3 {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin: 0px 0px 30px;
+}
+
+#why-us .content p {
+  font-size: 17px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+#why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 17px;
+  padding: 6px 32px 8px 32px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -ms-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+}
+
+#why-us .content .more-btn:hover {
+  color: var(--base-color);
+  background: #fff;
+}
+
+#why-us .icon-boxes .icon-box {
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
+  width: 100%;
+  border: 1px solid #eef0ef;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#why-us .icon-boxes .icon-box:hover {
+  background: #e4fff0;
+}
+
+#why-us .icon-boxes .icon-box:hover i {
+  background: #ffffff;
+}
+
+#why-us .icon-boxes .icon-box i {
+  font-size: 32px;
+  padding: 18px;
+  color: var(--base-color);
+  margin-bottom: 30px;
+  background: rgba(236, 249, 240, 0.979);
+  border-radius: 50px;
+  transition: all 0.5s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#why-us .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+#why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+/********* Why Us Section End ***********/
+/********* Courses Section Start ***********/
+#courses h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#courses h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#courses p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#courses .card .card-body .card-title a {
+  color: var(--secondBase-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#courses .card .card-body .card-title a:hover {
+  color: var(--hover-color);
+}
+
+#courses .card .card-body .card-text {
+  color: #777777;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+#courses .card .card-body .card-main-title ul {
+  list-style-type: none;
+}
+
+#courses .card .card-body .card-main-title ul li {
+  display: inline-block;
+}
+
+#courses .card .card-body .card-main-title ul .name {
+  padding: 7px 14px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: var(--base-color);
+  color: #fff;
+}
+
+#courses .card .card-body .card-main-title ul li.price {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: right !important;
+}
+
+#courses .card .card-body .card-person ul li img {
+  width: 50px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+#courses .card .card-body .card-person .person-name {
+  color: #5a6a60;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+#courses .card .card-body .card-person .trainer-rank {
+  font-size: 18px;
+  color: #657a6d;
+}
+
+/*********Courses Section End ***********/
+/*********Trainer Section Start ***********/
+#trainers h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#trainers h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#trainers p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#trainers .card-body .card-title {
+  color: var(--secondBase-color);
+  cursor: pointer;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#trainers .card-body .card-sub-title {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+#trainers .card-body p {
+  margin-top: 15px;
+  color: rgba(170, 170, 170, 0.72);
+  font-size: 13.88px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+#trainers .card-body .social {
+  margin-top: 20px;
+}
+
+#trainers .card-body .social a {
+  color: #7e9486;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#trainers .card-body .social a:hover {
+  color: #5fcf80;
+}
+
+#trainers .card-body .social a i {
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+/*********Trainer Section End ***********/
+/********** Testimonials Section Start ***********/
+#testimonials h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#testimonials h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#testimonials p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#testimonials .testimonial-wrap {
+  padding-left: 50px;
+}
+
+#testimonials .testimonial-wrap .testimonial-item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 30px 30px 30px 60px;
+  margin: 30px 15px;
+  width: 350px;
+  border: 1px solid #eef0ef;
+  position: relative;
+  background: #fff;
+  text-align: left;
+}
+
+#testimonials .testimonial-wrap .testimonial-item img {
+  width: 90px;
+  position: absolute;
+  border: 6px solid #fff;
+  left: -45px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#testimonials .testimonial-wrap .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+#testimonials .testimonial-wrap .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+#testimonials .testimonial-wrap .testimonial-item p {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 15px auto 15px auto;
+}
+
+#testimonials .testimonial-wrap .testimonial-item p .quote-icon-left,
+#testimonials .testimonial-wrap .testimonial-item p .quote-icon-right {
+  color: #c1ecce;
+  font-size: 26px;
+}
+
+#testimonials .testimonial-wrap .testimonial-item p .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+#testimonials .testimonial-wrap .testimonial-item p .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+#testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd !important;
+}
+
+#testimonials .owl-dot.active {
+  background: var(--base-color) !important;
+}
+
+/********** Testimonials Section End ***********/
+/********** Events Section Start ***********/
+#events h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#events h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#events p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#events .card {
+  border: none;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+#events .card .card-img {
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#events .card .card-img img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+#events .card .card-body {
+  width: 90%;
+  padding: 30px 0px;
+  z-index: 999999;
+  background: #fff;
+  border-top: 4px solid transparent;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#events .card .card-body .event-date {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#events .card .card-body .card-title a {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--secondBase-color);
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#events .card .card-body .card-text {
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
+
+#events .card .card-body:hover a {
+  color: var(--base-color);
+}
+
+#events .card .card-body:hover {
+  border-top: 4px solid var(--base-color);
+}
+
+#events .card:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/********** Events Section End ***********/
+/********** Pricing Section Start ***********/
+#pricing h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#pricing h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#pricing p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#pricing .price-card {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #eef0ef;
+  position: relative;
+  overflow: hidden;
+}
+
+#pricing .price-card h3 {
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+  background: #f8f8f8;
+}
+
+#pricing .price-card .featured {
+  color: #fff;
+  background: var(--base-color);
+}
+
+#pricing .price-card .advanced {
+  position: absolute;
+  width: 200px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: none;
+  color: #fff;
+  top: 18px;
+  right: -68px;
+  background: var(--base-color);
+  padding: 1px 0 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#pricing .price-card h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: var(--base-color);
+}
+
+#pricing .price-card h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+#pricing .price-card h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#pricing .price-card ul {
+  list-style: none;
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--box-Color);
+  padding: 0;
+  padding-top: 10px;
+}
+
+#pricing .price-card ul li {
+  padding-bottom: 15px;
+}
+
+#pricing .price-card ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+#pricing .price-card .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+}
+
+#pricing .price-card .btn-buy {
+  background: var(--base-color);
+  display: inline-block;
+  padding: 8px 35px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#pricing .price-card .btn-buy:hover {
+  background: var(--hover-color);
+}
+
+/********** Pricing Section End ***********/
+/********** Contact Section Start ***********/
+#contact h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#contact h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#contact p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#contact .map img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contact form input {
+  height: 45px;
+  font-size: 15px;
+}
+
+#contact form input:focus {
+  border: 1px solid var(--base-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact form textarea {
+  font-size: 15px;
+}
+
+#contact form textarea:focus {
+  border: 1px solid var(--base-color);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact form .message-btn {
+  padding: 10px 35px;
+  color: #fff;
+  background: var(--base-color);
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+#contact form .message-btn:hover {
+  background: var(--hover-color);
+}
+
+#contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+#contact .info i {
+  font-size: 20px;
+  color: #5fcf80;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ecf9f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+#contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37423b;
+}
+
+#contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #657a6d;
+}
+
+#contact .info .email,
+#contact .info .phone {
+  margin-top: 40px;
+}
+
+#contact .info .email:hover i,
+#contact .info .address:hover i,
+#contact .info .phone:hover i {
+  background: #5fcf80;
+  color: #fff;
+}
+
+/********** Contact Section End ***********/
+/********** Course Details Section Start ***********/
+#course-details h2 {
+  color: #AAAAAA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#course-details h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #9ae1af;
+  margin: 4px 10px;
+}
+
+#course-details p {
+  color: var(--secondBase-color);
+  font-size: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bolder;
+}
+
+#course-details .details-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#course-details .course-info {
+  background: #f6f7f6;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+#course-details .course-info h5 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#course-details .course-info p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#course-details .course-info a {
+  color: #657a6d;
+}
+
+#course-details .full-details h3 {
+  color: var(--box-Color);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px;
+}
+
+#course-details .full-details hr::after {
+  content: "";
+  width: 60px;
+  height: 1.4px;
+  display: block;
+  background: #9ae1af;
+  margin-top: -1px;
+  position: absolute;
+}
+
+#course-details .full-details p {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: var(--box-Color);
+}
+
+#course-details .details-image img {
+  width: 100%;
+}
+
+/********** Course Details Section End ***********/
+/********* Footer Section Start ***********/
+#footer {
+  color: #37423b;
+  font-size: 15px;
+  background: #eef0ef;
+}
+
+#footer .footer-top {
+  background: #f9faf9;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+  font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  color: var(--secondBase-color);
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top .footer-contact p {
+  color: #777777;
+  line-height: 26px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #5fcf80;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #5fcf80;
+}
+
+#footer .footer-top .footer-newsletter {
+  font-size: 16px;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #e0e5e2;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #5fcf80;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: var(--hover-color);
+}
+
+#footer .footer-bottom .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #5fcf80;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#footer .footer-bottom .social-links a:hover {
+  background: var(--hover-color);
+  color: #fff;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+#footer .footer-bottom .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .footer-bottom .credits a {
+  color: var(--hover-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .footer-bottom .credits a:hover {
+  color: var(--base-color);
+}
+
+/********** Footer Section End ***********/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #header {
+    background: #fff;
+  }
+  #header nav a.logo {
+    font-size: 22px;
+  }
+  #Hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #Hero .hero-article {
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+  }
+  #Hero .hero-article h1 {
+    font-size: 30px;
+    margin-top: 200px;
+  }
+  #Hero .hero-article h4 {
+    margin: 15px 0px;
+    font-size: 14px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #Hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #Hero .hero-article {
+    position: relative;
+    top: 30%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+  }
+  #Hero .hero-article h1 {
+    font-size: 40px;
+  }
+  #Hero .hero-article h4 {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #Hero {
+    height: 80vh;
+  }
+  #Hero .hero-article {
+    position: relative;
+    top: 20%;
+    transform: translateY(-45%);
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
+  }
+  #Hero .hero-article h1 {
+    font-size: 36px;
+  }
+  #Hero .hero-article h4 {
+    font-size: 16px;
+  }
+  #Hero .hero-article .hero-btn .get-started {
+    padding: 8px 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #Hero {
+    height: 80vh;
+  }
+  #Hero .hero-article {
+    position: relative;
+    top: 30%;
+    transform: translateY(-45%);
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*# sourceMappingURL=style.css.map */
